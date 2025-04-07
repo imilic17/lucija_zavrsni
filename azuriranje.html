@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ažuriranja</title>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="početna.html" class="logo">Edukacija</a>
+
+      <form action="pretraga.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="pretraži tečajeve..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Lucija Sigl</h3>
+         <p class="role">student</p>
+         <a href="profil.html" class="btn">pogledaj profil</a>
+         <div class="flex-btn">
+            <a href="logiranje.html" class="option-btn">prijava</a>
+            <a href="registriranje.html" class="option-btn">registracija</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Lucija Sigl</h3>
+      <p class="role">student</p>
+      <a href="profil.html" class="btn">pogledaj profil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="poćetna.html"><i class="fas fa-home"></i><span>početna</span></a>
+      <a href="o_nama.html"><i class="fas fa-question"></i><span>o nama</span></a>
+      <a href="tečajevi.html"><i class="fas fa-graduation-cap"></i><span>tečajevi</span></a>
+      <a href="profesori.html"><i class="fas fa-chalkboard-user"></i><span>predavači</span></a>
+      <a href="kontakti.html"><i class="fas fa-headset"></i><span>kontaktirajte nas</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>ažuriraj profil</h3>
+      <p>ažuriraj ime</p>
+      <input type="text" name="name" placeholder="Lucija Sigl" maxlength="50" class="box">
+      <p>ažuriraj email</p>
+      <input type="email" name="email" placeholder="lucijasigl@gmail.com" maxlength="50" class="box">
+      <p>prethodna lozinka</p>
+      <input type="password" name="old_pass" placeholder="unesite staru lozinku" maxlength="20" class="box">
+      <p>nova lozinka</p>
+      <input type="password" name="new_pass" placeholder="unesite novu lozinku" maxlength="20" class="box">
+      <p>potvrdite lozinku</p>
+      <input type="password" name="c_pass" placeholder="potvrdite novu lozinku" maxlength="20" class="box">
+      <p>ažuriraj sliku</p>
+      <input type="file" accept="image/*" class="box">
+      <input type="submit" value="ažuriraj profil" name="submit" class="btn">
+   </form>
+
+</section>
+
+<footer class="footer">
+
+   &copy; autorska prava @ 2022 od <span>mr. web dizajner</span> | sva prava pridržana!
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

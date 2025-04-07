@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registracija</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+   <section class="flex">
+      <a href="početna.html" class="logo">Educa.</a>
+
+      <form action="pretraga.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Pretraži tečajeve..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+   </section>
+</header>   
+
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <nav class="navbar">
+      <a href="početna.html"><i class="fas fa-home"></i><span>Početna</span></a>
+      <a href="o_nama.html"><i class="fas fa-question"></i><span>O nama</span></a>
+      <a href="tečajevi.html"><i class="fas fa-graduation-cap"></i><span>Tečajevi</span></a>
+      <a href="profesori.html"><i class="fas fa-chalkboard-user"></i><span>Profesori</span></a>
+      <a href="kontakti.html"><i class="fas fa-headset"></i><span>Kontakt</span></a>
+   </nav>
+</div>
+
+<section class="form-container">
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>Registrirajte se sada</h3>
+      <p>Vaše ime <span>*</span></p>
+      <input type="text" name="name" placeholder="Unesite svoje ime" required maxlength="50" class="box">
+      <p>Vaš email <span>*</span></p>
+      <input type="email" name="email" placeholder="Unesite svoj email" required maxlength="50" class="box">
+      <p>Vaša lozinka <span>*</span></p>
+      <input type="password" name="pass" placeholder="Unesite svoju lozinku" required maxlength="20" class="box">
+      <p>Potvrdite lozinku <span>*</span></p>
+      <input type="password" name="c_pass" placeholder="Potvrdite svoju lozinku" required maxlength="20" class="box">
+      <p>Odaberite profilnu sliku <span>*</span></p>
+      <input type="file" accept="image/*" required class="box">
+      <input type="submit" value="Registriraj se" name="submit" class="btn">
+   </form>
+</section>
+
+<footer class="footer">
+   &copy; autorska prava @ 2022 od <span>mr. web dizajner</span> | sva prava pridržana!
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

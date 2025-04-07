@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tečajevi</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+   <section class="flex">
+      <a href="početna.html" class="logo">Educa.</a>
+
+      <form action="pretraga.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Pretraži tečajeve..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+   </section>
+</header>   
+
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <nav class="navbar">
+      <a href="početna.html"><i class="fas fa-home"></i><span>Početna</span></a>
+      <a href="o_nama.html"><i class="fas fa-question"></i><span>O nama</span></a>
+      <a href="tečajevi.html"><i class="fas fa-graduation-cap"></i><span>Tečajevi</span></a>
+      <a href="profesori.html"><i class="fas fa-chalkboard-user"></i><span>Profesori</span></a>
+      <a href="kontakti.html"><i class="fas fa-headset"></i><span>Kontakt</span></a>
+   </nav>
+</div>
+
+<section class="courses">
+   <h1 class="heading">Naši tečajevi</h1>
+   <div class="box-container">
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-2.jpg" alt="">
+            <div class="info">
+               <h3>John Doe</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-1.png" alt="">
+            <span>10 videa</span>
+         </div>
+         <h3 class="title">Kompletan HTML vodič</h3>
+         <a href="playlist.html" class="inline-btn">Pogledaj popis</a>
+      </div>
+   </div>
+</section>
+
+<footer class="footer">
+   &copy; autorska prava @ 2022 od <span>mr. web dizajner</span> | sva prava pridržana!
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
