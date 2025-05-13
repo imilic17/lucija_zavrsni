@@ -51,6 +51,26 @@
                   <p>${course.description}</p>
                   <p><strong>Profesor:</strong> ${course.professor}</p>
                `;
+
+               if (courseId == 1) {
+                  container.innerHTML += `
+                     <section class="course-content">
+                        <h2>Sadržaj tečaja</h2>
+                        <ul>
+                           <li>Uvod u programiranje</li>
+                           <li>Osnovne strukture podataka</li>
+                           <li>Uvjetne naredbe i petlje</li>
+                           <li>Funkcije i modularnost</li>
+                           <li>Rad s datotekama</li>
+                        </ul>
+                     </section>
+
+                     <section class="quiz">
+                        <h2>Kviz: Provjerite svoje znanje</h2>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/python/python_quiz.asp" target="_blank">W3Schools Python Quiz</a>.</p>
+                     </section>
+                  `;
+               }
             } else {
                document.getElementById('course-details').innerHTML = '<p>Tečaj nije pronađen.</p>';
             }

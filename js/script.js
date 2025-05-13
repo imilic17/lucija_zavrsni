@@ -112,6 +112,7 @@ async function fetchData() {
         const professorsContainer = document.getElementById('professors-container');
         // Provjera postojanja elemenata prije manipulacije
         if (professorsContainer) {
+            professorsContainer.innerHTML = ''; // Čišćenje postojećeg sadržaja kako bi se spriječilo dupliciranje
             data.professors.forEach(professor => {
                 const professorElement = document.createElement('div');
                 professorElement.classList.add('professor');
@@ -138,6 +139,7 @@ if (window.location.pathname.includes('profesori.html')) {
 
             const professorsContainer = document.getElementById('professors-container');
             if (professorsContainer) {
+                professorsContainer.innerHTML = ''; // Čišćenje postojećeg sadržaja kako bi se spriječilo dupliciranje
                 data.professors.forEach(professor => {
                     const professorElement = document.createElement('div');
                     professorElement.classList.add('professor');
