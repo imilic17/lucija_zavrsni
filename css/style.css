@@ -1273,11 +1273,74 @@ section{
    margin: 1rem 0;
 }
 
+.courses .box-container .course {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
+.courses .box-container .course img {
+    width: 150px; /* Smanjena širina slike */
+    height: auto; /* Automatska visina za očuvanje proporcija */
+    display: block;
+    margin: 0 auto; /* Centriranje slike unutar elementa */
+}
 
+.courses .box-container .course h3 {
+    font-size: 2rem; /* Veći font za naslov */
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
 
+.courses .box-container .course p {
+    font-size: 1.6rem; /* Veći font za opis */
+    color: var(--light-color);
+}
 
+.professors .box-container .professor {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
+.professors .box-container .professor img {
+    width: 120px; /* Smanjena širina slike */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.professors .box-container .professor h3 {
+    font-size: 2rem; /* Veći font za ime */
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
+
+.professors .box-container .professor p {
+    font-size: 1.6rem; /* Veći font za opis */
+    color: var(--light-color);
+}
+
+.course-details {
+    text-align: center;
+    padding: 2rem;
+}
+
+.course-details img {
+    width: 200px; /* Smanjena širina slike */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.course-details h1 {
+    font-size: 2.5rem; /* Veći font za naslov */
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.course-details p {
+    font-size: 1.8rem; /* Veći font za opis */
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
 .footer{
    background-color: var(--white);
    border-top: var(--border);
