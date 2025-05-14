@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Detalji tečaja</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+   <section class="flex">
+      <a href="pocetna.html" class="logo">Edukacije</a>
+   </section>
+</header>
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <nav class="navbar">
+      <a href="pocetna.html"><i class="fas fa-home"></i><span>Početna</span></a>
+      <a href="o_nama.html"><i class="fas fa-question"></i><span>O nama</span></a>
+      <a href="tecajevi.html"><i class="fas fa-graduation-cap"></i><span>Tečajevi</span></a>
+      <a href="profesori.html"><i class="fas fa-chalkboard-user"></i><span>Profesori</span></a>
+      <a href="kontakti.html"><i class="fas fa-headset"></i><span>Kontakt</span></a>
+   </nav>
+</div>
+<section class="course-details" id="course-details">
+   <!-- Dinamički sadržaj tečaja će biti umetnut ovdje -->
+</section>
+<footer class="footer">
+   &copy; 2025 Educa. Sva prava pridržana.
+</footer>
+<script src="js/script.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', async () => {
+      const params = new URLSearchParams(window.location.search);
+      const courseId = params.get('id');
+
+      if (courseId) {
+         try {
+            const response = await fetch('/lucija_zavrsni/data.json');
+            const data = await response.json();
+            const course = data.courses.find(c => c.id == courseId);
+
+            if (course) {
+               const container = document.getElementById('course-details');
+               container.innerHTML = `
+                  <h1>${course.title}</h1>
+                  <img src="${course.thumbnail}" alt="${course.title}">
+                  <p>${course.description}</p>
+                  <p><strong>Profesor:</strong> ${course.professor}</p>
+               `;
+
+               if (courseId == 1) {
+                  container.innerHTML += `
+                     <section class="course-content">
+                        <h2>Sadržaj tečaja</h2>
+                        <ul>
+                           <li>Uvod u programiranje</li>
+                           <li>Osnovne strukture podataka</li>
+                           <li>Uvjetne naredbe i petlje</li>
+                           <li>Funkcije i modularnost</li>
+                           <li>Rad s datotekama</li>
+                        </ul>
+                     </section>
+
+                     <section class="quiz">
+                        <h2>Kviz: Provjerite svoje znanje</h2>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/python/python_quiz.asp" target="_blank">W3Schools Python Quiz</a>.</p>
+                     </section>
+                  `;
+               }
+            } else {
+               document.getElementById('course-details').innerHTML = '<p>Tečaj nije pronađen.</p>';
+            }
+         } catch (error) {
+            console.error('Greška prilikom dohvaćanja podataka:', error);
+         }
+      } else {
+         document.getElementById('course-details').innerHTML = '<p>ID tečaja nije naveden.</p>';
+      }
+   });
+</script>
+</body>
+</html>

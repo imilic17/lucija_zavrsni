@@ -1,0 +1,42 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Osnove programiranja",
+      "description": "Naučite osnove programiranja koristeći Python.",
+      "professor": "Ivan Horvat",
+      "thumbnail": "images/thumb-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Web razvoj",
+      "description": "Izrada modernih web stranica koristeći HTML, CSS i JavaScript.",
+      "professor": "Ana Kovač",
+      "thumbnail": "images/thumb-2.png"
+    },
+    {
+      "id": 3,
+      "title": "Napredni algoritmi",
+      "description": "Razumijevanje i implementacija naprednih algoritama.",
+      "professor": "Marko Marić",
+      "thumbnail": "images/thumb-3.png"
+    }
+  ],
+  "professors": [
+    {
+      "name": "Ivan Horvat",
+      "bio": "Stručnjak za Python s 10 godina iskustva.",
+      "profilePicture": "images/pic-1.jpg"
+    },
+    {
+      "name": "Ana Kovač",
+      "bio": "Web developer s fokusom na frontend tehnologije.",
+      "profilePicture": "images/pic-2.jpg"
+    },
+    {
+      "name": "Marko Marić",
+      "bio": "Specijalist za algoritme i podatkovne strukture.",
+      "profilePicture": "images/pic-3.jpg"
+    }
+  ]
+}

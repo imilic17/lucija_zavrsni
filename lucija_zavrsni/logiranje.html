@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>prijava</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="pocetna.html" class="logo">Edukacije</a>
+
+      <form action="pretraga.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Pretraži tečajeve..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-5.jpg" class="image" alt="">
+         <h3 class="name">Lucija Sigl</h3>
+         <p class="role">student</p>
+         <a href="profil.html" class="btn">Pogledaj profil</a>
+         <div class="flex-btn">
+            <a href="logiranje.html" class="option-btn">Prijava</a>
+            <a href="registracija.html" class="option-btn">Registracija</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-5.jpg" class="image" alt="">
+      <h3 class="name">Lucija Sigl</h3>
+      <p class="role">Student</p>
+      <a href="profil.html" class="btn">Pogledaj profil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="pocetna.html"><i class="fas fa-home"></i><span>početna</span></a>
+      <a href="o_nama.html"><i class="fas fa-question"></i><span>o nama</span></a>
+      <a href="tecajevi.html"><i class="fas fa-graduation-cap"></i><span>tečajevi</span></a>
+      <a href="profesori.html"><i class="fas fa-chalkboard-user"></i><span>predavači</span></a>
+      <a href="kontakti.html"><i class="fas fa-headset"></i><span>kontaktirajte nas</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>prijavite se</h3>
+      <p>vaš email <span>*</span></p>
+      <input type="email" name="email" placeholder="unesite svoj email" required maxlength="50" class="box">
+      <p>vaša lozinka <span>*</span></p>
+      <input type="password" name="pass" placeholder="unesite svoju lozinku" required maxlength="20" class="box">
+      <input type="submit" value="prijava" name="submit" class="btn">
+   </form>
+
+</section>
+
+<footer class="footer">
+
+   &copy; autorska prava @ 2022 od <span>mr. web dizajner</span> | sva prava pridržana!
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
