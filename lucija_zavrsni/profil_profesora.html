@@ -57,23 +57,46 @@
    </nav>
 </div>
 
-<section class="teacher-profile">
-   <h1 class="heading">Detalji profila</h1>
-
-   <div class="details">
-      <div class="tutor">
-         <img src="images/pic-2.jpg" alt="">
-         <h3>John Doe</h3>
-         <span>Razvijač</span>
-      </div>
-      <div class="flex">
-         <p>Ukupno popisa: <span>4</span></p>
-         <p>Ukupno videa: <span>18</span></p>
-         <p>Ukupno sviđanja: <span>1208</span></p>
-         <p>Ukupno komentara: <span>52</span></p>
-      </div>
+<section class="professor-profile">
+   <div class="profile-picture">
+      <img id="professor-img" src="" alt="Profesor">
+   </div>
+   <div class="profile-info">
+      <h2 id="professor-name">Ime profesora</h2>
+      <p id="professor-bio">Biografija profesora</p>
    </div>
 </section>
+
+<script>
+const professors = [
+   {
+      name: "Ivan Horvat",
+      bio: "Stručnjak za Python s 10 godina iskustva.",
+      profilePicture: "images/pic-1.jpg"
+   },
+   {
+      name: "Ana Kovač",
+      bio: "Web developer s fokusom na frontend tehnologije.",
+      profilePicture: "images/pic-2.jpg"
+   },
+   {
+      name: "Marko Marić",
+      bio: "Specijalist za algoritme i podatkovne strukture.",
+      profilePicture: "images/pic-3.jpg"
+   }
+];
+
+const params = new URLSearchParams(window.location.search);
+const nameParam = params.get("name");
+const professor = professors.find(p => p.name === nameParam);
+
+if (professor) {
+   document.getElementById("professor-name").textContent = professor.name;
+   document.getElementById("professor-bio").textContent = professor.bio;
+   document.getElementById("professor-img").src = professor.profilePicture;
+}
+</script>
+
 
 <footer class="footer">
    &copy; autorska prava @ 2022 od <span>mr. web dizajner</span> | sva prava pridržana!
