@@ -68,7 +68,7 @@ if (closeBtn) {
 }
 
 window.onscroll = () =>{
-   // Provjera postojanja elemenata prije manipulacije
+   
    if (profile) {
        profile.classList.remove('active');
    }
@@ -82,15 +82,13 @@ window.onscroll = () =>{
    }
 }
 
-// Dodavanje funkcionalnosti za dohvaćanje i prikaz podataka
+
 async function fetchData() {
     try {
         const response = await fetch('/lucija_zavrsni/data.json');
         const data = await response.json();
 
-        // Prikaz tečajeva
         const coursesContainer = document.getElementById('courses-container');
-        // Provjera postojanja elemenata prije manipulacije
         if (coursesContainer) {
             data.courses.forEach(course => {
                 const courseElement = document.createElement('div');
@@ -108,9 +106,7 @@ async function fetchData() {
             console.error('Element courses-container nije pronađen.');
         }
 
-        // Prikaz profesora
         const professorsContainer = document.getElementById('professors-container');
-        // Provjera postojanja elemenata prije manipulacije
         if (professorsContainer) {
             professorsContainer.innerHTML = ''; // Čišćenje postojećeg sadržaja kako bi se spriječilo dupliciranje
             data.professors.forEach(professor => {
@@ -169,9 +165,7 @@ if (window.location.pathname.includes('tečajevi.html')) {
             const response = await fetch('/lucija_zavrsni/data.json');
             const data = await response.json();
 
-            // Prikaz tečajeva
             const coursesContainer = document.getElementById('courses-container');
-            // Provjera postojanja elemenata prije manipulacije
             if (coursesContainer) {
                 data.courses.forEach(course => {
                     const courseElement = document.createElement('div');

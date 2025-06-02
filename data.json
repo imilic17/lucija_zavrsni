@@ -20,7 +20,28 @@
       "description": "Razumijevanje i implementacija naprednih algoritama.",
       "professor": "Marko Marić",
       "thumbnail": "images/thumb-3.png"
-    }
+    },
+    {
+     "id": 4,
+     "title": "Baze podataka",
+     "description": "Uvod u SQL i rad s relacijskim bazama podataka.",
+     "professor": "Petra Jurić",
+     "thumbnail": "images/post-1-4.png"
+    },
+    {
+     "id": 5,
+     "title": "Računalne mreže",
+     "description": "Osnove mreža, IP adrese i sigurnost.",
+     "professor": "Tomislav Babić",
+     "thumbnail": "images/post-1-5.png"
+   },
+   {
+     "id": 6,
+     "title": "Uvod u dizajn",
+     "description": "Naučite osnove grafičkog i UI/UX dizajna.",
+     "professor": "Lana Perić",
+     "thumbnail": "images/post-1-6.png"
+   }
   ],
   "professors": [
     {
@@ -37,6 +58,21 @@
       "name": "Marko Marić",
       "bio": "Specijalist za algoritme i podatkovne strukture.",
       "profilePicture": "images/pic-3.jpg"
-    }
+    },
+    {
+      "name": "Petra Jurić",
+      "bio": "Specijalistica za baze podataka i rad s MySQL-om.",
+      "profilePicture": "images/pic-7.jpg"
+   },
+   {
+     "name": "Tomislav Babić",
+     "bio": "Inženjer računalnih mreža s bogatim iskustvom u praksi.",
+     "profilePicture": "images/pic-6.jpg"
+   },
+   {
+     "name": "Lana Perić",
+     "bio": "Grafička dizajnerica s fokusom na UI/UX dizajn.",
+     "profilePicture": "images/pic-5.jpg"
+   }
   ]
 }

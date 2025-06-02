@@ -9,7 +9,7 @@
 <body>
 <header class="header">
    <section class="flex">
-      <a href="index.html" class="logo">Educa.</a>
+      <a href="početna.html" class="logo">Educa.</a>
    </section>
 </header>
 <div class="side-bar">
@@ -20,16 +20,24 @@
    <nav class="navbar">
       <a href="index.html"><i class="fas fa-home"></i><span>Početna</span></a>
       <a href="o_nama.html"><i class="fas fa-question"></i><span>O nama</span></a>
-      <a href="tečajevi.html"><i class="fas fa-graduation-cap"></i><span>Tečajevi</span></a>
+      <a href="tecajevi.html"><i class="fas fa-graduation-cap"></i><span>Tečajevi</span></a>
       <a href="profesori.html"><i class="fas fa-chalkboard-user"></i><span>Profesori</span></a>
-      <a href="kontakti.html"><i class="fas fa-headset"></i><span>Kontakt</span></a>
+      <a href="kontakti.html"><i class="fas fa-headset"></i><span>Kontaktirajte nas</span></a>
+   </nav>
    </nav>
 </div>
 <section class="course-details" id="course-details">
-   <!-- Dinamički sadržaj tečaja će biti umetnut ovdje -->
+   <div class="course-thumbnail">
+      <img id="course-image" src="images/thumb-1.png" alt="Tečaj">
+   </div>
+   <div class="course-info">
+      <h2 id="course-title">Naslov tečaja</h2>
+      <p id="course-description">Opis tečaja</p>
+      <p><strong>Profesor:</strong> <span id="course-professor">Ime profesora</span></p>
+   </div>
 </section>
 <footer class="footer">
-   &copy; 2025 Educa. Sva prava pridržana.
+&copy; autorska prava @ 2025 od <span>Lucija Sigl</span> | sva prava pridržana!
 </footer>
 <script src="js/script.js"></script>
 <script>
@@ -57,17 +65,110 @@
                      <section class="course-content">
                         <h2>Sadržaj tečaja</h2>
                         <ul>
-                           <li>Uvod u programiranje</li>
-                           <li>Osnovne strukture podataka</li>
-                           <li>Uvjetne naredbe i petlje</li>
-                           <li>Funkcije i modularnost</li>
-                           <li>Rad s datotekama</li>
+                           <li><strong>Osnovne strukture podataka:</strong> varijable, liste i nizovi u Pythonu.</li>
+                           <li><strong>Uvjetne naredbe i petlje:</strong> korištenje if, else, for i while naredbi.</li>
+                           <li><strong>Funkcije i modularnost:</strong> organizacija koda kroz funkcije.</li>
+                           <li><strong>Rad s datotekama:</strong> čitanje i pisanje u datoteke.</li>
                         </ul>
                      </section>
 
                      <section class="quiz">
                         <h2>Kviz: Provjerite svoje znanje</h2>
                         <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/python/python_quiz.asp" target="_blank">W3Schools Python Quiz</a>.</p>
+                     </section>
+                  `;
+               }
+               if (courseId == 2) {
+                  container.innerHTML += `
+                     <section class="course-content">
+                        <h2>Sadržaj tečaja</h2>
+                        <ul>
+                           <li><strong>Osnovne strukture podataka:</strong> DOM elementi, nizovi i objekti u JavaScriptu.</li>
+                           <li><strong>Uvjetne naredbe i petlje:</strong> korisnička logika putem skripti.</li>
+                           <li><strong>Funkcije i modularnost:</strong> JavaScript funkcije i odvojeni dijelovi koda.</li>
+                           <li><strong>Rad s datotekama:</strong> dohvaćanje podataka putem fetch API-ja.</li>
+                        </ul>
+                     </section>
+
+                     <section class="quiz">
+                        <h2>Kviz: Provjerite svoje znanje</h2>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/html/html_quiz.asp" target="_blank">W3Schools HTML Quiz</a>.</p>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/css/css_quiz.asp" target="_blank">W3Schools CSS Quiz</a>.</p>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/js/js_quiz.asp" target="_blank">W3Schools JavaScript Quiz</a>.</p>
+
+
+                     </section>
+                  `;
+               }
+               if (courseId == 3) {
+                  container.innerHTML += `
+                     <section class="course-content">
+                        <h2>Sadržaj tečaja</h2>
+                        <ul>
+                           <li><strong>Osnovne strukture podataka:</strong> stabla, grafovi, hash mape.</li>
+                           <li><strong>Uvjetne naredbe i petlje:</strong> logika za algoritme sortiranja i pretraživanja.</li>
+                           <li><strong>Funkcije i modularnost:</strong> algoritmi u funkcijama.</li>
+                           <li><strong>Rad s datotekama:</strong> spremanje rezultata algoritama.</li>
+                        </ul>
+                     </section>
+
+                     <section class="quiz">
+                        <h2>Kviz: Provjerite svoje znanje</h2>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/python/python_quiz.asp" target="_blank">W3Schools Python Quiz</a>.</p>
+                     </section>
+                  `;
+               }
+               if (courseId == 4) {
+                  container.innerHTML += `
+                     <section class="course-content">
+                        <h2>Sadržaj tečaja</h2>
+                        <ul>
+                           <li><strong>Osnovne strukture podataka:</strong> relacije, tablice i zapisi.</li>
+                           <li><strong>Uvjetne naredbe i petlje:</strong> SQL upiti s uvjetima.</li>
+                           <li><strong>Funkcije i modularnost:</strong> korištenje SQL funkcija i procedure.</li>
+                           <li><strong>Rad s datotekama:</strong> eksport podataka iz baza (npr. u CSV).</li>
+                        </ul>
+                     </section>
+
+                     <section class="quiz">
+                        <h2>Kviz: Provjerite svoje znanje</h2>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL Quiz</a>.</p>
+                     </section>
+                  `;
+               }
+               if (courseId == 5) {
+                  container.innerHTML += `
+                     <section class="course-content">
+                        <h2>Sadržaj tečaja</h2>
+                        <ul>
+                           <li><strong>Osnovne strukture podataka:</strong> paketi, IP adrese, zaglavlja.</li>
+                           <li><strong>Uvjetne naredbe i petlje:</strong> simulacije mrežnih protokola.</li>
+                           <li><strong>Funkcije i modularnost:</strong> odvajanje mrežnih funkcija po slojevima.</li>
+                           <li><strong>Rad s datotekama:</strong> konfiguracijske i log datoteke.</li>
+                        </ul>
+                     </section>
+
+                     <section class="quiz">
+                        <h2>Kviz: Provjerite svoje znanje</h2>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/cybersecurity/cybersecurity_quiz.php" target="_blank">W3Schools Cyber Security Quiz</a>.</p>
+                     </section>
+                  `;
+               }
+               if (courseId == 6) {
+                  container.innerHTML += `
+                     <section class="course-content">
+                        <h2>Sadržaj tečaja</h2>
+                        <ul>
+                           <li><strong>Osnovne strukture podataka:</strong> raspored elemenata i hijerarhija.</li>
+                           <li><strong>Uvjetne naredbe i petlje:</strong> prikaz elemenata ovisno o interakciji.</li>
+                           <li><strong>Funkcije i modularnost:</strong> komponentni pristup dizajnu.</li>
+                           <li><strong>Rad s datotekama:</strong> slike, fontovi i CSS resursi.</li>
+                        </ul>
+                     </section>
+
+                     <section class="quiz">
+                        <h2>Kviz: Provjerite svoje znanje</h2>
+                        <p>Za rješavanje kviza posjetite <a href="https://www.w3schools.com/css/css_quiz.asp" target="_blank">W3Schools CSS Quiz</a>.</p>
                      </section>
                   `;
                }
